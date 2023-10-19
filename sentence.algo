@@ -1,0 +1,23 @@
+ALGORITHM lengh of sentence
+VAR
+    ch:STRING;
+    i,j,m,n;ch.lengh:INTEGER
+BEGIN
+write("donne la phrase");
+read(ch);
+write("the lengh of sentence is", ch.length)
+n:=0;
+FOR i FROM 1 TO ch.length  DO
+    IF (ch[i]=" ") THEN
+        n:=n+1;
+    END_IF
+END_FOR
+write ("the number of words is", n);
+m:=0;
+FOR j FROM 1 TO ch.lengh  DO
+    IF (ch[i]in["a,e,i,o,u,y,A,E,I,O,U,Y"] ) THEN
+    m:=m+1;
+    END_IF
+END_FOR
+write ("the number of vowels is", m);
+END
